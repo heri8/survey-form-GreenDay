@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(0deg, rgba(50, 241, 255, 0.5) 0%, rgba(66, 209, 255, 0.5) 46%, rgba(0, 212, 255, 1) 100%), url(greenday.jpg);
+  background-size: cover;
+  z-index: -1;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  min-height: 2000px;
+}
+
+h1,
+p {
+  text-align: center;
+}
+
+form {
+  max-width: 600px;
+  background-color: rgba(0, 66, 123, 0.7);
+  margin: 0 auto;
+  padding: 20px 40px;
+  color: white;
+  border-radius: 8px;
+}
+
+label {
+  display: block;
+  margin-bottom: 25px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+  display: block;
+  margin-top: 10px;
+  height: 40px;
+  width: 100%;
+  border-radius: 5px;
+  border: 0;
+  padding: 10px;
+  font-family: inherit;
+}
+
+textarea {
+  height: 100px;
+}
+
+button {
+  width: 100%;
+  height: 35px;
+  background-color: aqua;
+  border: 0;
+  border-radius: 5px;
+}
